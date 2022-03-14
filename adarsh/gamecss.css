@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../OHMAN/BACKGROUND.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.header{
+    height: 100vh;
+    text-align: center;
+    background-position: cover;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 70px;
+    font-size: 45px;
+
+}
+span{
+    color: green;
+}
+
+.search-field{
+    height: 50px;
+    padding: 10px;
+    border: none;
+border-radius: 25px;
+}
+.skills{
+    width: 450px;
+}
+.search-btn{
+    height: 50px;
+    width: 150px;
+    background:green ;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    transition: 2s;
+}
+.search-btn:hover{
+    background:red;
+    cursor: pointer;
+}

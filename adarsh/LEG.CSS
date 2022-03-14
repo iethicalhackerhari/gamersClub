@@ -1,0 +1,642 @@
+*
+{
+    padding: 0;
+    margin: 0;
+font-family: sans-serif;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)), url(../OHMAN/BACKGROUND.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+
+}
+.header ul li:hover.sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    
+}
+
+nav{
+   
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    width: 150px;
+}
+.nav-link{
+flex: 2;
+text-align: right;
+}
+.nav-link ul li{
+    list-style:none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+.nav-link ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background:yellowgreen;
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: 0.5s;
+    
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+
+}
+.pc{
+    display: none;
+}
+.nav-link ul li:hover .pc{
+    display: block;
+    position: absolute;
+   transition:none;
+    margin-top: 15px;
+    margin-left:-15px;
+}
+.nav-link ul li:hover .pc ul{
+    display: block;
+    margin: 10px;
+}
+.nav-link ul li:hover .pc ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-link ul li:hover .pc ul li:last-child{
+    border-bottom: none;
+}
+.nav-link ul li:hover .pc ul li a:hover{
+    color: yellowgreen;
+}
+.content{
+    width:80% ;
+    position:absolute ;
+    top:50% ;
+    transform:translateY(-70%) ;
+    text-align:center;
+    color: white;
+}
+.content h1{
+font-size: 70px;
+margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100px;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellowgreen;
+    color:whitesmoke;
+    cursor: pointer;
+    background: transparent;
+    color:white;
+position: relative;
+overflow: hidden;
+}
+span{
+    width: 0;
+    background: red;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+width: 100px;
+
+}
+button:hover {
+    border: none;
+}
+nav.fa{
+    display: none;
+}
+@media(max-width:700px) {
+    .content h1{
+        font-size: 30px;
+    } 
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link {
+        position: absolute;
+        background:transparent;
+        padding: 20px;
+        
+        height: 95vh;
+        width: 200px;
+        top: 0;
+        right:0;
+        text-align:left;
+        z-index: 1;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-link ul{
+        padding: 30px;
+    }
+}
+
+
+
+
+/*------  releases ------*/
+
+
+.releases{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+h3{
+    font-size: 20px;
+    opacity:70%;
+}
+p{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 13px;
+
+}
+.row{
+    margin-top: 5%;
+    justify-content: space-between;
+    display: flex;
+}
+.course-col{
+    flex-basis: 31%;
+    background-color: #90EE90;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+.course-col h2 h3 p {
+    text-decoration: none;
+    
+}
+h1{
+    text-align: center;
+    margin: 10px 0;
+    font-weight:600px ;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.4);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/*-----department-----*/
+.campus{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width:100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.2s;
+
+}
+.layer:hover {
+    background:rgba(0,0,0,0.75); 
+}
+.layer h2{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+   transition: 0.6;
+   opacity: 0;
+}
+.layer:hover h2{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+
+/*---------cooperative--------*/
+
+.cooperative{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 100px;
+}
+.cooperative-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.cooperative-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.cooperative-col p{
+    padding: 0%;
+}
+.cooperative-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+/*-------reviews-------*/
+.reviews{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 100px;
+}
+.reviews-col{
+    flex-basis: 28%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:rgb(214, 230, 199);
+    padding: 29px;
+    cursor: pointer;
+    display: flex;
+}
+.reviews-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.reviews-col p{
+    padding: 0;
+}
+.reviews-col h3{
+    margin: 2%;
+    text-align: left;
+}
+.see-more{
+    text-align: center ;
+
+    padding: 10;
+
+}
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+
+}
+.comment-box h2{
+    text-align: left;
+}
+.comment-form input,.comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background:#f0f0f0
+}
+.comment-form button{
+    margin: 10px 0;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position:relative ;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid white;
+    background:red;
+    color: white;
+    transition: 1s;
+}
+
+@media(max-width:700px){
+    .reviews-col img{
+    margin-left: 5px;
+    margin-right: 30px;
+
+    }
+}
+
+@media(max-width:700px){
+    .hero-btn{
+    margin-left: 5px;
+    margin-right: 30px;
+    flex-direction: column;
+    }
+}
+
+/*---------contact-----------*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../pubg/study.img);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.cta p{
+    color: white;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    opacity: 70%;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellowgreen;
+    color:whitesmoke;
+    cursor: pointer;
+    background: transparent;
+    color:white;
+position: relative;
+overflow: hidden;
+}
+span{
+    width: 0;
+    background: yellowgreen;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+width: 100px;
+
+}
+button:hover {
+    border: none;
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/*-----------contact us page----------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../OHMAN/contactus.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top:10%;
+    padding-bottom: 10%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+@media(max-width:700px)
+{
+    .about-col{
+        
+        width: 55%;
+        padding: 5px;
+        margin-bottom: 3px;
+    }
+}
+@media(max-width:700px){
+    .about-col img{
+        margin-left: 5px;
+        margin-right: 30px;
+    
+    }
+}
+/*---------about us page---------*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+
+}
+.contact-col{
+    padding-right: 50px;
+margin: 10px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-right: 50px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact-col h2{
+    color: red;
+}
+.sub-header-2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../OHMAN/About-us-min.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.contact-col input,.contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline:none;
+    border: 1px solid black
+    ;
+}
+
+/*-------------footer-------------*/
+.container{
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
+}
+row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+text-align: center;
+    width: 100%;
+    padding: 70px 0;
+    background-color:black;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+width: 25%;
+padding: 0 30px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+position: absolute;
+center: 0;
+bottom: -10px;
+background-color:yellowgreen;
+height: 2px;
+box-sizing: border-box;
+width: 90px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 18px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    color:#bbbb;
+    display: block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: white;
+    padding-top: 10px;
+}
+@media(max-width:700px)
+{
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+
+    }
+}
+@media(max-width:500px)
+{
+    .footer-col{
+        width: 100%;
+        
+        
+    }
+}

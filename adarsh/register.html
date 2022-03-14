@@ -1,0 +1,285 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>web design</title>
+   </head>
+   <style>
+         body{
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../OHMAN/BACKGROUND.jpg);
+            background-repeat: no-repeat;
+background-size:cover;
+margin: 0%;
+padding: 0%;
+font-family: sans-serif;
+        }
+
+
+        .grp{
+            width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+color: white; 
+
+        }
+
+
+
+        .grp h1{
+    float:center;
+    font-size: 50px;
+    border-bottom: 6px solid greenyellow;
+    margin-bottom: 50px;
+    padding:13px 0; 
+
+}
+
+.input-field{
+width: 100%;
+overflow: hidden;
+font-size: 20px;
+padding: 8px 0;
+margin: 8px 0;
+color:white;
+background: none;
+border: none;
+outline:none ;
+border-bottom: 1px solid greenyellow;
+}
+.input-field1{
+border: none;
+
+background:none;
+color:white;
+font-size: 18px;
+width: 100px;
+float: left;
+margin: 8px 0;
+overflow: hidden;
+border-bottom: 2px solid greenyellow;
+font-size: 20px;
+padding: 8px 0;
+
+}
+
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellowgreen;
+    color:whitesmoke;
+    cursor: pointer;
+    background: transparent;
+    color:white;
+position: relative;
+overflow: hidden;
+}
+span{
+    width: 0;
+    background: yellowgreen;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+width: 100px;
+
+}
+button:hover {
+    border: none;
+}
+
+
+.gender{
+background: none;
+color:white;
+border: none;
+border-bottom: 2px solid yellowgreen;
+padding: 8px 0;
+margin : 8px,0;
+
+}
+.dob{
+    
+    padding: 15px 0;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid yellowgreen;
+    background: none;
+    outline: none;
+    overflow: hidden;
+
+
+}
+
+
+.num{
+    background: none;
+    border: none;
+    border-bottom: 2px solid yellowgreen;
+    padding: 15px 0;
+    margin: 8px 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url(../pubg/BACKGROUND.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+
+}
+.header ul li:hover.sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    
+}
+
+nav{
+   
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    width: 150px;
+}
+.nav-link{
+flex: 2;
+text-align: right;
+}
+.nav-link ul li{
+    list-style:none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+.nav-link ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background:yellowgreen;
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: 0.5s;
+    
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+
+}  
+.pc{
+    display: none;
+}
+.nav-link ul li:hover .pc{
+    display: block;
+    position: absolute;
+   transition:none;
+    margin-top: 15px;
+    margin-left:-15px;
+}
+.nav-link ul li:hover .pc ul{
+    display: block;
+    margin: 10px;
+}
+.nav-link ul li:hover .pc ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-link ul li:hover .pc ul li:last-child{
+    border-bottom: none;
+}
+.nav-link ul li:hover .pc ul li a:hover{
+    color: yellowgreen;
+} 
+   </style>
+   <body>
+    <section class="header">
+        <nav>
+            <a href="HEAD.html"><img src="../OHMAN/5a32a7eccb9a85480a628f8d.png"></a>
+            <div class="nav-link">
+             
+              <ul>
+                  <li><a href="#"><a href="HEAD.html">Home</a></li>
+                  <li><a href="#"><a href="about.html"> About</a></li>
+                  <li><a href="#"></a><a href="GAMES.html">Games</a>
+                    <div class="pc">
+                        <ul>
+                            <li><a href="PC.html">pc</a></li>
+                            <li><a href="phone game.html">mobile</a></li>
+                            <li><a href="GAMES.html">XML</a></li>
+                        </ul>
+                        </div>
+                </li>
+                  <li><a href="#"><a href="contact.html"> Contact</a></li>
+                  <li><a href="#"><a href=""> Settings</a></li>
+                  <li><a href="#"></a><a href="login.html">login</a></li>
+                  <li><a href="#"></a><a href="register.html">Register</a></li>
+                  </ul> 
+            </div>
+          
+        </nav>
+    <form class="grp">
+       <h1>Register</h1>
+    <input type="text" class="input-field1" placeholder="user id"  maxlength="25" required>
+    <input type="email" class="input-field" placeholder="email id" maxlength="25"   required>
+    
+
+
+
+    
+    <input type="password" name="PASSWORD"maxlength="14" class="input-field" placeholder="password" required>
+
+<div class="gender">
+    <input type="radio" name="request_type" value="men">men
+    <input type="radio" name="request_type" value="woman">woman<br>
+    </div>
+
+
+<div class="dob">
+     <input type="date" name="DOB"value=dob required>
+</div>
+
+
+    <div class="num">
+    <input type="number"name="phone" placeholder="phone number"id="p"><br>
+</div>
+   
+
+
+    
+    
+
+
+    
+    <button type="button"><span></span>Register</button>
+
+    </form>
+           
+        </body>
+        
+        
+   </body>
